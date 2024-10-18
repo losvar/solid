@@ -1,14 +1,14 @@
 @font-face {
     font-family: Vazir;
-    src: url("../fonts/vazir/Vazir.eot");
-    src: url("../fonts/vazir/Vazir.eot?#iefix") format("embedded-opentype"), url("../fonts/vazir/Vazir.woff") format("woff"), url("../fonts/vazir/Vazir.ttf") format("truetype");
+    src: url("https://losvar.github.io/solid//Vazir.eot");
+    src: url("https://losvar.github.io/solid/Vazir.eot?#iefix") format("embedded-opentype"), url("https://losvar.github.io/solid/Vazir.woff") format("woff"), url("https://losvar.github.io/solid/Vazir.ttf") format("truetype");
     font-weight: 400;
 }
 
 @font-face {
     font-family: Vazir;
     src: url("../fonts/vazir/Vazir-Bold.eot");
-    src: url("../fonts/vazir/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/vazir/Vazir-Bold.woff") format("woff"), url("../fonts/vazir/Vazir-Bold.ttf") format("truetype");
+    src: url("https://losvar.github.io/solid/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("https://losvar.github.io/solid/Vazir-Bold.woff") format("woff"), url("https://losvar.github.io/solid/Vazir-Bold.ttf") format("truetype");
     font-weight: 500;
 }
 
@@ -54,7 +54,7 @@ body {
 #main::before {
     width: 100%;
     height: 300px;
-    background: url("../images/bg.png") no-repeat center center;
+    background: url("https://losvar.github.io/solid/bg.png") no-repeat center center;
     background-size: 100%;
     content: "";
     display: block;
