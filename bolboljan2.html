@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانلود اپلیکیشن بلبل جان 2</title>
+    <link rel="stylesheet" href="https://losvar.github.io/solid/assets/css/style.css">
+    <style>
+        /* CSS for centering the footer */
+        .footer-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<!-- this is for home -->
+<body id="home">
+
+    <div class="container">
+        <div id="main">
+            <div id="main-right">
+                <div class="title-wrapper">
+                    <img src="https://losvar.github.io/solid/iMovie/fav.png" id="logo" title="Bolboljan2"https://losvar.github.io/solid/>
+                    <div id="title-img">
+                        <img src="https://losvar.github.io/solid/title.png" alt="بلبل جان 2 (نسخه جدید)"https://losvar.github.io/solid/>
+                    </div>
+                </div>
+                <strong class="d-block text-right">بلبل جان 2 (نسخه جدید)</strong>
+                <span class="d-block text-right">دانلود کاملا رایگان فیلم و سریال بدون سانسور، آپدیت رایگان، پخش فیلم و سریال در اپلیکیشن با بلبل جان 2</span>
+            </div>
+            <div id="main-left">
+                <strong class="text-shadow">دانلود کاملا رایگان اپلیکیشن برای اندروید</strong>
+                <div id="main-download">
+                    <div id="main-download-inner">
+                        <img src="https://losvar.github.io/solid/assets/images/android.svg" alt=""https://losvar.github.io/solid/>
+                        <strong>اپلیکیشن اندروید</strong>
+                        <a href="" title="" target="_self" class="btn"></a>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <div class="footer-container"> <!-- Added container for the footer -->
+            <div class="footer">
+                <div class="download-links">
+                    <div class="download-btn-outer">
+                        <a href="" title="" target="_self" class="download-btn" id="mac-app">
+                            <img src="https://losvar.github.io/solid/assets/images/windows.svg" alt="">
+                            <div>
+                                <strong class="d-block">آدرس وبسایت</strong>
+                                <span class="d-block">www.bolboljan.net</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="download-btn-outer">
+                        <a href="" title="" target="_self" class="download-btn" id="windows-app">
+                            <img src="https://losvar.github.io/solid/assets/images/tizen.svg" alt="">
+                            <div>
+                                <strong class="d-block">دانلود رایگان</strong>
+                                <span class="d-block">بدون سانسور</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="download-btn-outer">
+                        <a href="" title="" target="_self" class="download-btn" id="android-app">
+                            <img src="https://losvar.github.io/solid/assets/images/tizen.svg" alt="">
+                            <div>
+                                <strong class="d-block">پخش آنلاین</strong>
+                                <span class="d-block"></span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://losvar.github.io/solid/assets/js/gsap.min.js"></script>
+    <script type="text/javascript" src="https://losvar.github.io/solid/assets/js/platform.js"></script>
+    <script type="text/javascript" src="https://losvar.github.io/solid/main.js"></script>
+	
+    <script>
+        function countClick(id) {
+            // Retrieve current count from localStorage
+            var count = localStorage.getItem(id);
+
+            // If count doesn't exist, set it to 0
+            if (!count) {
+                count = 0;
+            }
+
+            // Increment count
+            count++;
+
+            // Store updated count in localStorage
+            localStorage.setItem(id, count);
+        }
+
+        // Restore counts on page load
+        window.addEventListener('load', function () {
+            var links = document.querySelectorAll('.download-btn');
+            links.forEach(function (link) {
+                var id = link.getAttribute('id');
+                var count = localStorage.getItem(id);
+                if (count) {
+                    link.innerHTML += ' (' + count + ')';
+                }
+            });
+        });
+    </script>
+	
+</body>
+
+</html>
