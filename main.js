@@ -8,19 +8,19 @@ function handleOS() {
     const mainDownloadLink = document.querySelector('#main-download-inner a');
 
     if (os.toLowerCase() === 'windows') {
-        mainDownloadImage.src = 'https://losvar.github.io/solid/assets/images/android.svg';
+        mainDownloadImage.src = 'https://losvar.github.io/solid/android.svg';
         mainDownloadStrong.innerHTML = 'اپلیکیشن اندروید';
         mainDownloadLink.setAttribute('href', androidLink);
         mainDownloadLink.innerHTML = 'دانلود رایگان';
     }
     else if (os.toLowerCase() === 'android') {
-        mainDownloadImage.src = 'https://losvar.github.io/solid/assets/images/android.svg';
+        mainDownloadImage.src = 'https://losvar.github.io/solid/android.svg';
         mainDownloadStrong.innerHTML = 'اپلیکیشن اندروید';
         mainDownloadLink.setAttribute('href', androidLink);
         mainDownloadLink.innerHTML = 'دانلود فایل .APK';
     }
     else if (os.toLowerCase() === 'os x') {
-        mainDownloadImage.src = 'https://losvar.github.io/solid/assets/images/mac.svg';
+        mainDownloadImage.src = 'https://losvar.github.io/solid/mac.svg';
         mainDownloadStrong.innerHTML = 'اپلیکیشن مک';
         mainDownloadLink.setAttribute('href', macLink);
         mainDownloadLink.innerHTML = 'به زودی';
@@ -28,7 +28,7 @@ function handleOS() {
     }
     else if (os.toLowerCase() === 'tizen') {
         // Handle Tizen OS
-        mainDownloadImage.src = 'https://losvar.github.io/solid/assets/images/tizen.svg';
+        mainDownloadImage.src = 'https://losvar.github.io/solid/tizen.svg';
         mainDownloadStrong.innerHTML = 'اپلیکیشن تیزن';
         // Set appropriate Tizen link
         mainDownloadLink.setAttribute('href', 'tizen-download-link');
@@ -36,7 +36,7 @@ function handleOS() {
     }
     else if (os.toLowerCase() === 'android tv') {
         // Handle Android TV OS
-        mainDownloadImage.src = 'https://losvar.github.io/solid/assets/images/androidtv.svg';
+        mainDownloadImage.src = 'https://losvar.github.io/solid/androidtv.svg';
         mainDownloadStrong.innerHTML = 'اپلیکیشن اندروید تی وی';
         // Set appropriate Android TV link
         mainDownloadLink.setAttribute('href', 'android-tv-download-link');
