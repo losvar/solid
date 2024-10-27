@@ -6,7 +6,25 @@
     <title>در حال انتقال</title>
     <script type="text/javascript">
         setTimeout(function() {
-            window.location.href = "https://instagram.com/appversion2";
+            var domain = window.location.hostname; // دریافت نام دامنه
+            var redirectUrl;
+
+            // بررسی دامنه و تعیین URL هدف
+            if (domain === "bolboljan.net") {
+                redirectUrl = "https://instagram.com/appversion2";
+            } else if (domain === "imoviee.com") {
+                redirectUrl = "https://www.instagram.com/imovie.li";
+            } else if (domain.includes("imoviee")) {
+                redirectUrl = "https://www.instagram.com/imovie.li";
+            } else if (domain.includes("bolbol")) {
+                redirectUrl = "https://instagram.com/appversion2";
+            } else if (domain.split('.').length > 2) { // ساب دامنه دارد
+                redirectUrl = "https://www.instagram.com/imovie.li";
+            } else { // دامنه بدون ساب دامنه
+                redirectUrl = "https://instagram.com/appversion2";
+            }
+
+            window.location.href = redirectUrl;
         }, 500); // 500 میلی‌ثانیه
     </script>
 </head>
