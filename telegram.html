@@ -6,7 +6,25 @@
     <title>در حال انتقال</title>
     <script type="text/javascript">
         setTimeout(function() {
-            window.location.href = "https://t.me/bollbolljan";
+            var domain = window.location.hostname; // دریافت نام دامنه
+            var redirectUrl;
+
+            // بررسی دامنه و تعیین URL هدف
+            if (domain === "bolboljan.net") {
+                redirectUrl = "https://t.me/bollbolljan";
+            } else if (domain === "imoviee.com") {
+                redirectUrl = "https://t.me/imovieecom";
+            } else if (domain.includes("imoviee")) {
+                redirectUrl = "https://t.me/imovieecom";
+            } else if (domain.includes("bolbol")) {
+                redirectUrl = "https://t.me/bollbolljan";
+            } else if (domain.split('.').length > 2) { // ساب دامنه دارد
+                redirectUrl = "https://t.me/imovieecom";
+            } else { // دامنه بدون ساب دامنه
+                redirectUrl = "https://t.me/bollbolljan";
+            }
+
+            window.location.href = redirectUrl;
         }, 500); // 500 میلی‌ثانیه
     </script>
 </head>
