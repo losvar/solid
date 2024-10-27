@@ -5,30 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>در حال انتقال</title>
     <script type="text/javascript">
-        function redirectBasedOnDomain() {
-            var currentDomain = window.location.hostname;
-            var redirectUrl = "https://t.me/bollbolljan"; // پیش‌فرض
-
-            if (currentDomain === "bolboljan.net") {
-                redirectUrl = "https://t.me/bollbolljan";
-            } else if (currentDomain === "imoviee.com") {
-                redirectUrl = "https://t.me/imovieecom";
-            } else if (currentDomain.includes("imoviee")) {
-                redirectUrl = "https://t.me/imovieecom";
-            } else if (currentDomain.includes("bolbol")) {
-                redirectUrl = "https://t.me/bollbolljan";
-            } else if (currentDomain.split(".").length > 2) {
-                redirectUrl = "https://t.me/imovieecom";
-            } else {
-                redirectUrl = "https://t.me/bollbolljan";
-            }
-
-            setTimeout(function() {
-                window.location.href = redirectUrl;
-            }, 500); // 500 میلی‌ثانیه
-        }
-
-        window.onload = redirectBasedOnDomain;
+        setTimeout(function() {
+            window.location.href = "https://t.me/bollbolljan";
+        }, 500); // 500 میلی‌ثانیه
     </script>
 </head>
 <body>
