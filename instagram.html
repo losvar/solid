@@ -5,30 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>در حال انتقال</title>
     <script type="text/javascript">
-        function redirectBasedOnDomain() {
-            var currentDomain = window.location.hostname;
-            var redirectUrl = "https://instagram.com/appversion2"; // پیش‌فرض
-
-            if (currentDomain === "bolboljan.net") {
-                redirectUrl = "https://instagram.com/appversion2";
-            } else if (currentDomain === "imoviee.com") {
-                redirectUrl = "https://www.instagram.com/imovie.li";
-            } else if (currentDomain.includes("imoviee")) {
-                redirectUrl = "https://www.instagram.com/imovie.li";
-            } else if (currentDomain.includes("bolbol")) {
-                redirectUrl = "https://instagram.com/appversion2";
-            } else if (currentDomain.split(".").length > 2) {
-                redirectUrl = "https://www.instagram.com/imovie.li";
-            } else {
-                redirectUrl = "https://instagram.com/appversion2";
-            }
-
-            setTimeout(function() {
-                window.location.href = redirectUrl;
-            }, 500); // 500 میلی‌ثانیه
-        }
-
-        window.onload = redirectBasedOnDomain;
+        setTimeout(function() {
+            window.location.href = "https://instagram.com/appversion2";
+        }, 500); // 500 میلی‌ثانیه
     </script>
 </head>
 <body>
