@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>در حال انتقال</title>
     <script type="text/javascript">
-        setTimeout(function() {
-            var domain = window.location.hostname; // دریافت نام دامنه
-            var redirectUrl;
+        function redirectBasedOnDomain() {
+            var currentDomain = window.location.hostname;
+            var redirectUrl = "https://t.me/bollbolljan"; // پیش‌فرض
 
-            // بررسی دامنه و تعیین URL هدف
-            if (domain === "bolboljan.net") {
+            if (currentDomain === "bolboljan.net") {
                 redirectUrl = "https://t.me/bollbolljan";
-            } else if (domain === "imoviee.com") {
+            } else if (currentDomain === "imoviee.com") {
                 redirectUrl = "https://t.me/imovieecom";
-            } else if (domain.includes("imoviee")) {
+            } else if (currentDomain.includes("imoviee")) {
                 redirectUrl = "https://t.me/imovieecom";
-            } else if (domain.includes("bolbol")) {
+            } else if (currentDomain.includes("bolbol")) {
                 redirectUrl = "https://t.me/bollbolljan";
-            } else if (domain.split('.').length > 2) { // ساب دامنه دارد
+            } else if (currentDomain.split(".").length > 2) {
                 redirectUrl = "https://t.me/imovieecom";
-            } else { // دامنه بدون ساب دامنه
+            } else {
                 redirectUrl = "https://t.me/bollbolljan";
             }
 
-            window.location.href = redirectUrl;
-        }, 500); // 500 میلی‌ثانیه
+            setTimeout(function() {
+                window.location.href = redirectUrl;
+            }, 500); // 500 میلی‌ثانیه
+        }
+
+        window.onload = redirectBasedOnDomain;
     </script>
 </head>
 <body>
